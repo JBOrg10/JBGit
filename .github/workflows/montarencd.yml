@@ -1,4 +1,4 @@
-name: Subir mi pagina 
+name: Montar mi pagina a Github
 
 on:
   push:
@@ -11,27 +11,27 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Clonar el repositorio
+      - name: Clonar repositorio
         uses: actions/checkout@v3
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Subir archivos a GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+      - name: Subir artefactos para GitHub Pages
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: '.'  
+          path: '.'  # Aquí se sube la raíz con index.html y estilos
 
   deploy:
-    needs: build
+    needs: build-and-deploy
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy-pages.outputs.page_url }}
     steps:
-      - name: Desplegar
-        id: deployment
-        uses: actions/deploy-pages@v2
+      - name: Desplegar sitio
+        id: deploy-pages
+        uses: actions/deploy-pages@v1
