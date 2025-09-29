@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carnaval Rio de Janeiro</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1 class="titulo">Carnaval de Rio de Janeiro</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPsico</title>
+  <link rel="icon" href="img/logoiconopestaña.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="JPsico">
+    <nav>
+      <ul>
+        <li><a href="#bannerhero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="bannerhero">
+    <h2>Bienvenid@ a JPsico</h2>
+    <button>Agendar</button>
+  </section>
+
+  <img src="img/serviciostexto.png" alt="servicios" class="imagen"> 
+  <section id="servicios">
+    <div class="bloque">
+        <h3>Atención personalizada</h3>
+        <p>Nuestras sesiones están hechas para ti y solo para ti. Para que obtengas lo que necesitas, cuando lo necesitas.</p>
+    </div>
+    <div class="bloque">
+        <h3>Confidencialidad</h3>
+        <p>Todas las sesiones son privadas asegurando seguridad cliente/psicologo.</p>
+    </div>
+    <div class="bloque">
+        <h3>Flexibilidad</h3>
+        <p>Consulta presencial o en línea según lo necesites, dispondras de horarios flexibles para tus sesiones.</p>
+    </div>
+  </section>
+  <section id="servicios">
+    <div class="bloque">
+        <h3>Profesionales certificados</h3>
+        <p>Contamos con psicólogos titulados y especializados en diferentes áreas.</p>
+    </div>
+    <div class="bloque">
+        <h3>Resultados medibles</h3>
+        <p>Evaluamos tu avance y adaptamos las sesiones a tus necesidades.</p>
+    </div>
+    <div class="bloque">
+        <h3>Recursos adicionales</h3>
+        <p>Material complementario y herramientas prácticas para tu día a día.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <img src="img/galeriatexto.png" alt="galeria" class="imagen"> 
+  <section id="galeria">
     <div class="galeria">
-      <img src="img/63.jpg"/>
-      <img src="img/63f2ef41b32dd.jpeg"/>
-      <img src="img/Desfile_Portela_2014_(906185).jpg"/>
-      <img src="img/rio-carnaval-2017-escola-e-desfiles-2.png"/>
+      <img src="img/1.jpg"/>
+      <img src="img/2.png"/>
+      <img src="img/3.jpg"/>
+      <img src="img/4.png"/>
+      <img src="img/5.jpg"/>
+      <img src="img/6.jpg"/>
+      <img src="img/7.jpg"/>
+      <img src="img/8.png"/>
     </div>
-    <div class="info">
-      <h3>Información del evento</h3>
-      <p>
-        ¡Prepárate para vivir la experiencia más vibrante y espectacular del planeta! El Carnaval de Río de Janeiro no es solo una fiesta, ¡es un estallido de música, color y alegría que invade las calles de Brasil!
-        <br>
-        🌟 Desfiles de Escuelas de Samba
-        El corazón del carnaval late en el Sambódromo Marquês de Sapucaí, donde las escuelas de samba compiten con carrozas gigantes, trajes deslumbrantes y coreografías impresionantes. Cada desfile cuenta una historia, un tema único lleno de creatividad y pasión. ¡La emoción se palpa en cada tambor y en cada paso de samba!
-        <br>
-        🎷 Blocos de Calle: Fiesta Sin Límites
-        Las calles de Río se transforman en un escenario gigante gracias a los blocos, grupos musicales abiertos a todos. Desde ritmos de samba hasta axé, cada bloco es una explosión de energía donde locales y turistas bailan juntos, ¡sin parar!
-        <br>
-        ✨ Música, Baile y Disfraces
-        El ritmo contagioso de la samba se mezcla con plumas, lentejuelas y disfraces coloridos que hacen que cada calle y cada desfile sea un espectáculo visual. Tanto en el Sambódromo como en los blocos de barrio, el carnaval es una fiesta para todos los sentidos.
-      </p>
-        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/vGt_Aba01pg?si=HvHeYtyPCmWMixNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/q7m_p6HSkIo?si=MRgfDIzGdxtjw6HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-    <div class="info">
-        <h3>Horarios del Carnaval</h3>
-        <table border="2">
-          <tr>
-            <th>Dia</th>
-            <th>Evento</th>
-            <th>Hora</th>
-          </tr>
-          <tr>
-            <td>Viernes</td>
-            <td>Desfiles preliminares de escuelas de samba</td>
-            <td>21:00 - 02:00</td>
-          <tr>
-            <td>Sabado</td>
-            <td>Desfiles principales</td>
-            <td>21:00 - 05:00</td>
-          </tr>
-          <tr>
-            <td>Domingo</td>
-            <td>Blocos de calle en varios barrios</td>
-            <td>10:00 - 23:00</td>
-          </tr>
-          <tr>
-            <td>Lunes</td>
-            <td>Blocos de calle</td>
-            <td>10:00 - 23:00</td>
-          </tr>
-          <tr>
-            <td>Martes</td>
-            <td>Desfile de campeonas de samba</td>
-            <td>21:00 - 01:00</td>
-          </tr>
-          <tr>
-            <td>Miercoles</td>
-            <td>Blocos de cierre y despedida</td>
-            <td>10:00 - 20:00</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-      <div class="info">
-        <h3>¿Donde es?</h3>
-        <p>Aquí se realizan los desfiles oficiales de las escuelas de samba, con graderías para miles de espectadores.</p>
-        <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0521503697923!2d-43.19937892478727!3d-22.911447238037443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0d91d00145%3A0xd0816e87c570167d!2sSambodromo%20Marques%20de%20Sapucai!5e0!3m2!1ses-419!2sco!4v1756084834892!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
-      </div>
-      
-    </div>
-    <br>
-    <div class="info">
-      <h3>¿Quieres recibir mas informacion?</h3>
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" name="" id="nombre" required><br><br>
-      <label for="edad">Edad:</label><br>
-      <input type="number" name="" id="edad" required min="18"><br><br>
-      <label for="telefono">Telefono:</label><br>
-      <input type="tel" name="" id="telefono" required><br><br>
-      <label for="correo">Correo:</label><br>
-      <input type="email" name="" id="correo" required><br><br>
-      <button type="button">Recibe información ya!</button>
-    </div>
+  </section>
 
-  <div class="footer">
-        <p>&copy; 2025 Carnaval de Rio de Janeiro</p>
-        <p>
-            <a href="#">+55 21 3958-0722</a> | 
-            <a href="#">Lunes a Viernes: 9:00 a.m. – 6:00 p.m. (hora de Brasilia, GMT-3)</a> | 
-            <a href="#">info@rio-carnaval.com</a>
-        </p>
+  <hr>
 
-  </div>
-  </body>
+  <img src="img/preciostexto.png" alt="Planes y Precios" class="imagen"> 
+  <section id="precios">
+  <table class="precios">
+        <thead>
+        <tr>
+            <th>Plan</th>
+            <th>Características</th>
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Básico</td>
+            <td>1 sesión individual por semana</td>
+            <td>$50.000</td>
+        </tr>
+        <tr>
+            <td>Estándar</td>
+            <td>2 sesiones individuales por semana + seguimiento</td>
+            <td>$90.000</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Sesiones ilimitadas + recursos exclusivos</td>
+            <td>$150.000</td>
+        </tr>
+        <tr>
+            <td>Familiar</td>
+            <td>Sesiones grupales para 3 miembros de la familia</td>
+            <td>$120.000</td>
+        </tr>
+        <tr>
+            <td>Empresarial</td>
+            <td>Programas de bienestar para equipos y empresas</td>
+            <td>$300.000</td>
+        </tr>
+        </tbody>
+    </table>
+    </section>
+
+  <hr>
+  
+  <img src="img/contactotexto.png" alt="Contactanos" class="imagen"> 
+  <section id="contacto">
+    <form>
+      <label>NOMBRE<br><input type="text" name="nombre"></label><br><br>
+      <label>CORREO ELECTRONICO<br><input type="email" name="email"></label><br><br>
+      <label>MENSAJE<br><textarea name="mensaje"></textarea></label><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <a href="#bannerhero"><img src="img/iriniciotexto.png" alt="Ir al inicio" class="imagen"></a>
+
+  <footer>
+    <img src="img/logoiconopestaña.png" alt="JPsico"> <p>© 2025</p> 
+  </footer>
+</body>
 </html>
